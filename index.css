@@ -35,6 +35,11 @@ a {
     font-size: 0.75rem;
 }
 
+footer p,
+span{
+    font-size: 0.75rem;
+}
+
 /* Nav */
 
 header .container{
@@ -55,23 +60,28 @@ nav a {
 
 /* Hero */
 
-.hero{
+.hero {
     width: 100%;
-    min-height: 280px;
-    background: #2e2e2e url("images/hero.png");
+    min-height: 260px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.png");
     background-repeat: no-repeat;
     background-position: 20% 80%;
     background-size: cover;
     color: #ffffff;
 }
 
+.hero div.container{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
 
 /* footer */
 
 footer {
     display: flex;
     background-color: #202020;
-    font-size: 0.75rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,7 +146,7 @@ p {
     }
 
     .hero {
-        min-height: 460px;
+        min-height: 360px;
     }
 
 }
@@ -151,6 +161,6 @@ p {
     }
 
     .hero {
-        min-height: 540px;
+        min-height: 520px;
     }
 }
