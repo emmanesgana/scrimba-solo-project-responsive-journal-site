@@ -115,7 +115,7 @@ footer span {
     color: #ECECEC;
 }
 
-/* Main - Home*/
+/* Main - Home */
 
 .posts {
     display: grid;
@@ -285,7 +285,7 @@ show {
     }
 
     .about-container {
-        padding: 0 3em;
+        padding: 2.5em 3em 1em 3em;
     }
 
     .blog-post-image {
@@ -294,10 +294,6 @@ show {
 
     .recent-posts {
         font-size: 1rem;
-    }
-
-    footer {
-        max-width: 900px;
     }
 
     .blog-post-date {
