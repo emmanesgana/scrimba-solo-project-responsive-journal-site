@@ -209,6 +209,12 @@ show {
     font-size: 0.85rem;
 }
 
+.recent-posts {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
 /* Main - About */
 
 
@@ -255,6 +261,10 @@ show {
     .blog-post-image {
         height: 520px;
     }
+
+    .recent-posts {
+        font-size: 1rem;
+    }    
 
     footer {
         max-width: 900px;
