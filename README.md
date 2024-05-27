@@ -7,5 +7,5 @@ https://scrimba-sp-my-journal.netlify.app/
 ![alt text](https://github.com/emmanesgana/scrimba-solo-project-responsive-journal-site/blob/main/preview/preview.png)
 
 ## Mobile View
-<p align="center">![alt text](https://github.com/emmanesgana/scrimba-solo-project-responsive-journal-site/blob/main/preview/preview-mobile.png)</p>
+<p align="center"><img src="https://github.com/emmanesgana/scrimba-solo-project-responsive-journal-site/blob/main/preview/preview-mobile.png" /></p>
 
