@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -18,7 +20,7 @@ body {
 
 h1,
 h2,
-h3, 
+h3,
 p {
     margin: 0;
 }
@@ -30,7 +32,7 @@ h1 {
 }
 
 footer p,
-span{
+span {
     font-size: 0.75rem;
 }
 
@@ -41,14 +43,14 @@ span{
 
 /* Nav */
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.850em;
 }
 
-header .container h1{
+header .container h1 {
     letter-spacing: -1px;
 }
 
@@ -63,7 +65,7 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:last-child{
+nav a:last-child {
     margin-left: 1.25em;
 }
 
@@ -83,7 +85,7 @@ nav a:last-child{
     margin-bottom: .850em;
 }
 
-.hero-post{
+.hero-post {
     margin-left: 1.5em;
     margin-top: auto;
     margin-bottom: 1.5em;
@@ -117,7 +119,7 @@ footer span {
 
 .posts {
     display: grid;
-    gap: 1em;  
+    gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-bottom: 1em;
     /* margin-bottom: 1em; */
@@ -188,11 +190,11 @@ show {
 }
 
 .blog-post-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    filter: brightness(50%);
     height: 300px;
     object-fit: cover;
     object-position: 15% 85%;
-    margin-bottom: 1em ;
+    margin-bottom: 1em;
 }
 
 .about-me-image {
@@ -235,11 +237,11 @@ show {
 
 @media (min-width: 510px) {
 
-    header .container h1{
+    header .container h1 {
         font-size: 1.85rem;
     }
 
-    nav a{
+    nav a {
         font-size: .895rem;
     }
 
@@ -247,18 +249,18 @@ show {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero-post{
+    .hero-post {
         width: 75%;
     }
 
 }
 
 @media (min-width: 768px) {
-    header .container h1{
+    header .container h1 {
         font-size: 2.25rem;
     }
 
-    nav a{
+    nav a {
         font-size: 1rem;
     }
 
@@ -266,7 +268,7 @@ show {
         min-height: 520px;
     }
 
-    .hero-post{
+    .hero-post {
         width: 80%;
     }
 
@@ -283,7 +285,7 @@ show {
     }
 
     .about-container {
-        padding:0 3em;
+        padding: 0 3em;
     }
 
     .blog-post-image {
@@ -292,7 +294,7 @@ show {
 
     .recent-posts {
         font-size: 1rem;
-    }    
+    }
 
     footer {
         max-width: 900px;
