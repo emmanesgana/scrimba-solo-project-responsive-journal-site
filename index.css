@@ -16,12 +16,8 @@ body {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 h1, 
+h3, 
 p {
     margin: 0;
 }
@@ -42,6 +38,8 @@ span{
     font-weight: 700;
 }
 
+
+
 /* Nav */
 
 header .container{
@@ -55,10 +53,19 @@ header .container h1{
     letter-spacing: -1px;
 }
 
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
 nav a {
-    margin-left: 1.25em;
     font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
+}
+
+nav a:last-child{
+    margin-left: 1.25em;
 }
 
 /* Hero */
@@ -87,12 +94,14 @@ nav a {
 /* footer */
 
 footer {
-    display: flex;
     background-color: #202020;
+    margin: 0 auto;
+    height: 105px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.25em 0;
+    width: 100%;
 }
 
 footer p {
@@ -110,7 +119,9 @@ footer span {
 .posts {
     display: grid;
     gap: 1em;  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 article {
@@ -142,14 +153,52 @@ p {
     line-height: 1.3;
 }
 
-/* Main - About */
+.view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
 
-.posts {
-    display: grid;
-    gap: 1em;  
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.view-more span {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.view-more span:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+show {
+    display: block;
+}
+
+/* Main - Blog post */
+
+.blog-post {
     margin-bottom: 1em;
 }
+
+.blog-post-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 85%;
+    margin-top: 1.25em;
+}
+
+.blog-post-title {
+    font-size: 2.25em;
+}
+
+/* Main - About */
+
+
 
 /* Media Queries */
 
@@ -166,10 +215,6 @@ p {
     .posts {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    /* .hero {
-        height: 320px;
-    } */
 
     .hero-post{
         width: 75%;
@@ -189,8 +234,16 @@ p {
     .hero {
         min-height: 520px;
     }
-    
+
     .hero-post{
         width: 80%;
+    }
+
+    .blog-post-image {
+        height: 520px;
+    }
+
+    footer {
+        max-width: 900px;
     }
 }
