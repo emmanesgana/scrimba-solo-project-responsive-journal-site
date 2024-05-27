@@ -177,10 +177,14 @@ show {
     display: block;
 }
 
-/* Main - Blog post */
+/* Main - Blog post / About me */
 
 .blog-post {
     margin-bottom: 1em;
+}
+
+.about-me-image-container {
+    margin-top: 1em;
 }
 
 .blog-post-image {
@@ -189,6 +193,14 @@ show {
     object-fit: cover;
     object-position: 15% 85%;
     margin-bottom: 1em ;
+}
+
+.about-me-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 .blog-post-info-title {
@@ -256,6 +268,18 @@ show {
 
     .hero-post{
         width: 80%;
+    }
+
+    .about-me-image-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        margin-bottom: 1.25em;
+    }
+
+    .about-me-image {
+        height: 200px;
+        width: 200px;
     }
 
     .blog-post-image {
