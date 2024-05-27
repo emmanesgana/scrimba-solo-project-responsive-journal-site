@@ -274,12 +274,16 @@ show {
         display: flex;
         align-items: center;
         gap: 1.5em;
-        margin-bottom: 1.25em;
+        margin-bottom: 1.75em;
     }
 
     .about-me-image {
         height: 200px;
         width: 200px;
+    }
+
+    .about-container {
+        padding:0 3em;
     }
 
     .blog-post-image {
