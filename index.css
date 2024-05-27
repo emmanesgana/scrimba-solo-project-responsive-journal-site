@@ -117,6 +117,10 @@ footer span {
 
 /* Main - Home */
 
+main {
+    margin-bottom: 2em;
+}
+
 .posts {
     display: grid;
     gap: 1em;
